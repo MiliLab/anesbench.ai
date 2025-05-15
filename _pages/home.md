@@ -5,7 +5,7 @@ permalink: /
 header:
     overlay_color: "#000"
     overlay_filter: "0.1"
-    # overlay_image: /assets/overview.png
+    # overlay_image: {{ site.baseurl }}/assets/overview.png
 excerpt: "Multi-Dimensional Evaluation of LLM Reasoning in Anesthesiology"
 classes:
     - wide
@@ -37,7 +37,7 @@ enabling evaluation of LLMs’ knowledge, application, and clinical reasoning ab
 # 🔍 Overview
 <figure>
 <div align="center">
-<img src="/assets/overview.png">
+<img src="{{ site.baseurl }}/assets/overview.png">
 </div>
 <div align="center">
 <!-- <figcaption align = "center"><b>Figure 1: Overview of the AnesBench. 

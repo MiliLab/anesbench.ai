@@ -2,11 +2,6 @@
 layout: splash
 title: Leaderboard
 permalink: /leaderboard/
-header:
-    link: 
-        rel: "shortcut icon" 
-        href: "assets/logo.png" 
-        type: "image/x-icon"
 classes:
     - landing
     - dark-theme
