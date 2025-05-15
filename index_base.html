@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>AnesBench: Multi-Dimensional Evaluation of LLM Reasoning in Anesthesiology</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">AnesBench: Multi-Dimensional Evaluation of LLM Reasoning in Anesthesiology</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="" target="_blank">Xiang Feng</a><sup>1 ∗</sup>,</span>
+                <span class="author-block">
+                  <a href="" target="_blank">Wentao Jiang</a><sup>1 ∗</sup>,</span>
+                  <span class="author-block">
+                    <a href="" target="_blank">Zengmao Wang</a><sup>1</sup>,</span>
+                    <span class="author-block">
+                      <a href="" target="_blank">Yong Luo</a><sup>1 †</sup>,</span>
+                      <span class="author-block">
+                        <a href="" target="_blank">Pingbo Xu</a><sup>2,3</sup>,</span>
+                        <span class="author-block">
+                          <a href="" target="_blank">Baosheng Yu</a><sup>4</sup>,</span>
+                          <span class="author-block">
+                            <a href="" target="_blank">Hua Jin</a><sup>5,6</sup>,</span>
+                          <span class="author-block">
+                            <a href="" target="_blank">Bo Du</a><sup>1 †</sup>,</span>
+                          <span class="author-block">
+                            <a href="" target="_blank">Jing Zhang</a><sup>1 †</sup></span>
+                  </span>
+                  </div>
+
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup> School of Computer Science, Wuhan University, China <br><sup>2</sup>Department of Anesthesiology, Zhejiang Cancer Hospital, China<br><sup>3</sup>Institute of Medicine, Chinese Academy of Sciences, Hangzhou, Zhejiang, China<br><sup>4</sup>Lee Kong Chian School of Medicine, Nanyang Technological University, Singapore<br><sup>5</sup>Department of Anesthesiology, First People's Hospital of Yunnan Province, China<br><sup>6</sup>Kunming University of Science and Technology, China<br></span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution</small> <small><br><sup>†</sup>Corresponding Author</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span> -->
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="https://huggingface.co/collections/MiliLab/anesbench-datasets-collection-682458e4e5d5cbd2b6871e79" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <!-- <i class="fas fa-file-pdf"></i> -->
+                        <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face Logo" width="200"/>
+                      </span>
+                      <span>HuggingFace</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/MiliLab/AnesBench" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code&Benchmark</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2504.02404" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/overview.jpg" alt="Overview"/>
+      <h2 class="subtitle has-text-centered">
+        Overview of AnesBench and our work. The top section of the figure presents the benchmark's basic information, including examples for three question types and statistics. The bottom section displays multiple dimensions that may be related to the model’s reasoning ability, as revealed by our analyses and experiments.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The application of large language models (LLMs) in the medical field has gained significant attention, yet their reasoning capabilities in more specialized domains like anesthesiology remain underexplored.In this paper, we systematically evaluate the reasoning capabilities of LLMs in anesthesiology and analyze key factors influencing their performance. To this end, we introduce AnesBench, a cross-lingual benchmark designed to assess anesthesiology-related reasoning across three levels: factual retrieval (System 1), hybrid reasoning (System 1.x), and complex decision-making (System 2). Through extensive experiments, we first explore how model characteristics, including model scale, Chain of Thought (CoT) length, and language transferability, affect reasoning performance. Then, we further evaluate the effectiveness of different training strategies, leveraging our curated anesthesiology-related dataset, including continuous pre-training (CPT) and supervised fine-tuning (SFT). Additionally, we also investigate how the test-time reasoning techniques, such as Best-of-N sampling and beam search, influence reasoning performance, and assess the impact of reasoning-enhanced model distillation, specifically DeepSeek-R1.We publicly released AnesBench, along with our CPT and SFT training datasets and evaluation code at https://github.com/MiliLab/AnesBench.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered"><img src="static/images/酷-1.png" alt="emoji" width="50" height="50"/> Main(Partial) Evaluation Results on AnesBench and AMCQA</h2>
+    <div class="hero-body">
+      <img src="static/images/table.png" alt="Overview"/>
+      <!-- <h2 class="subtitle has-text-centered">
+        
+      </h2> -->
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered"> <img src="static/images/天使.png" alt="emoji" width="50" height="50"/> Impact of Model Characteristics</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/fig1.png" alt="Performance Across Model Scale"/>
+        <h2 class="subtitle has-text-centered">
+          Performance Across Model Scale
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/fig2.png" alt="Performance Across Language"/>
+        <h2 class="subtitle has-text-centered">
+          Performance Across Language 
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/fig2.png" alt="Performance Across COT Length"/>
+        <h2 class="subtitle has-text-centered">
+          Performance Across COT Length
+       </h2>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered"><img src="static/images/开心-2.png" alt="emoji" width="50" height="50"/> Impact of Training & Reasoning Strategy</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/table2.png" alt="Effectiveness of Training Strategies"/>
+        <h2 class="subtitle has-text-centered">
+          Effectiveness of Training Strategies
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/table3.png" alt="Impact of Reasoning Techniques"/>
+        <h2 class="subtitle has-text-centered">
+          Impact of Reasoning Techniques
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/fig4.png" alt="Evaluation of Distillation Performance"/>
+        <h2 class="subtitle has-text-centered">
+          Evaluation of Distillation Performance
+       </h2>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+<!-- BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{AnesBench,
+        title={AnesBench: Multi-Dimensional Evaluation of LLM Reasoning in Anesthesiology},
+        author={Xiang Feng and Wentao Jiang and Zengmao Wang and Yong Luo and Pingbo Xu and Baosheng Yu and Hua Jin and Bo Du and Jing Zhang},
+        journal={arXiv preprint arXiv:2504.02404},
+        year={2025}
+      }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  </body>
+  </html>

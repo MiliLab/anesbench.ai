@@ -43,6 +43,7 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body>
 
@@ -97,7 +98,7 @@
 
                     <!-- Supplementary PDF link -->
                     <span class="link-block">
-                      <a href="" target="_blank"
+                      <a href="https://huggingface.co/collections/MiliLab/anesbench-datasets-collection-682458e4e5d5cbd2b6871e79" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <!-- <i class="fas fa-file-pdf"></i> -->
@@ -114,7 +115,7 @@
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code&Benchmark</span>
+                    <span>Code&Introduction</span>
                   </a>
                 </span>
 
@@ -138,10 +139,10 @@
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
+<section class="hero teaser is-light">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static/images/overview.jpg" alt="Overview"/>
+      <img src="static/images/updated_figs/overview.png" alt="Overview"/>
       <h2 class="subtitle has-text-centered">
         Overview of AnesBench and our work. The top section of the figure presents the benchmark's basic information, including examples for three question types and statistics. The bottom section displays multiple dimensions that may be related to the model’s reasoning ability, as revealed by our analyses and experiments.
       </h2>
@@ -151,14 +152,14 @@
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<section class="section hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            The application of large language models (LLMs) in the medical field has gained significant attention, yet their reasoning capabilities in more specialized domains like anesthesiology remain underexplored.In this paper, we systematically evaluate the reasoning capabilities of LLMs in anesthesiology and analyze key factors influencing their performance. To this end, we introduce AnesBench, a cross-lingual benchmark designed to assess anesthesiology-related reasoning across three levels: factual retrieval (System 1), hybrid reasoning (System 1.x), and complex decision-making (System 2). Through extensive experiments, we first explore how model characteristics, including model scale, Chain of Thought (CoT) length, and language transferability, affect reasoning performance. Then, we further evaluate the effectiveness of different training strategies, leveraging our curated anesthesiology-related dataset, including continuous pre-training (CPT) and supervised fine-tuning (SFT). Additionally, we also investigate how the test-time reasoning techniques, such as Best-of-N sampling and beam search, influence reasoning performance, and assess the impact of reasoning-enhanced model distillation, specifically DeepSeek-R1.We will publicly release AnesBench, along with our CPT and SFT training datasets and evaluation code at https://github.com/MiliLab/AnesBench.
+            The application of large language models (LLMs) in the medical field has gained significant attention, yet their reasoning capabilities in more specialized domains like anesthesiology remain underexplored.In this paper, we systematically evaluate the reasoning capabilities of LLMs in anesthesiology and analyze key factors influencing their performance. To this end, we introduce AnesBench, a cross-lingual benchmark designed to assess anesthesiology-related reasoning across three levels: factual retrieval (System 1), hybrid reasoning (System 1.x), and complex decision-making (System 2). Through extensive experiments, we first explore how model characteristics, including model scale, Chain of Thought (CoT) length, and language transferability, affect reasoning performance. Then, we further evaluate the effectiveness of different training strategies, leveraging our curated anesthesiology-related dataset, including continuous pre-training (CPT) and supervised fine-tuning (SFT). Additionally, we also investigate how the test-time reasoning techniques, such as Best-of-N sampling and beam search, influence reasoning performance, and assess the impact of reasoning-enhanced model distillation, specifically DeepSeek-R1.We publicly released AnesBench, along with our CPT and SFT training datasets and evaluation code at https://github.com/MiliLab/AnesBench.
           </p>
         </div>
       </div>
@@ -169,42 +170,36 @@
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered"><img src="static/images/酷-1.png" alt="emoji" width="50" height="50"/> Main(Partial) Evaluation Results on AnesBench and AMCQA</h2>
     <div class="hero-body">
       <img src="static/images/table.png" alt="Overview"/>
-      <!-- <h2 class="subtitle has-text-centered">
-        
-      </h2> -->
+
     </div>
   </div>
-</section>
+</section> -->
 <!-- End teaser video -->
 
-
 <!-- Image carousel -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3 has-text-centered"> <img src="static/images/天使.png" alt="emoji" width="50" height="50"/> Impact of Model Characteristics</h2>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <!-- Your image here -->
         <img src="static/images/fig1.png" alt="Performance Across Model Scale"/>
         <h2 class="subtitle has-text-centered">
           Performance Across Model Scale
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/fig2.png" alt="Performance Across Language"/>
         <h2 class="subtitle has-text-centered">
           Performance Across Language 
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/fig2.png" alt="Performance Across COT Length"/>
         <h2 class="subtitle has-text-centered">
           Performance Across COT Length
@@ -212,32 +207,942 @@
   </div>
 </div>
 </div>
+</section> -->
+
+<!-- Image carousel -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered"><img src="static/images/天使.png" alt="emoji" width="50" height="50"/>Impact of Model Characteristics</h2>
+      <div class="content has-text-centered" style="margin-bottom: 2rem;">
+        <p>This section shows the impact of model characteristics on the performance of anesthesia reasoning, including model scale, Chain of Thought (CoT) length, and cross-lingual ability.</p>
+      </div>
+      <div id="model-characteristics-carousel" class="carousel results-carousel">
+        <div class="item has-text-centered">
+          <img src="static/images/updated_figs/updated1_models_en.png" alt="不同规模模型的性能" style="display: block; width: 50%; margin: 0 auto;"/>
+          <div class="subtitle" style="background-color: #d0c0a42e; padding: 10px; width: 75%; margin: 0 auto;">
+            <!-- text-align: left; -->
+            <!-- <span style="font-size: 1.2em; font-weight: bold;">Take away:</span> -->
+            <!-- <br> -->
+            <b>Conclusion 1:</b> Model performance is strongly positively correlated with model scale, yet this relationship exhibits diminishing marginal returns.<br>
+            <b>Conclusion 2:</b> Compared to System 1, the performance gains achieved by increasing model scale on System 2 are significantly lower.
+          </div>
+        </div>
+        <div class="item has-text-centered">
+          <img src="static/images/updated_figs/updated1_models_cn.png" alt="不同规模模型的性能" style="display: block; width: 50%; margin: 0 auto;"/>
+          <div class="subtitle has-text-centered" style="background-color: #d0c0a42e; padding: 10px; width: 70%; margin: 0 auto;">
+            <b>Conclusion :</b>  Consistent with findings on AnesBench, Chinese AMCQA also demonstrates a positive correlation between model performance and scale, exhibiting diminishing returns. However, the distinction between system1,system1.x and system2 is not pronounced, potentially due to dataset's limited differentiation in difficulty levels.
+          </div>
+        </div>
+        <div class="item has-text-centered">
+          <img src="static/images/updated_figs/translation_lollipop.png" alt="跨语言性能" style="display: block; width: 50%; margin: 0 auto;"/>
+          <div class="subtitle has-text-centered" style="background-color: #d0c0a42e; padding: 10px; width: 70%; margin: 0 auto;">
+            <b>Conclusion :</b> Language transfer ability remains critical for multilingual model performance in anesthesia reasoning. We recommend continued pre-training to address the deficiency in domain-specific knowledge across languages at the stable language ability stage.
+          </div>
+        </div>
+        <div class="item item-wide has-text-centered" style="width: 100%;">
+          <img src="static/images/updated_figs/models_length.png" alt="思维链长度的影响" style="display: block; width: 100%; margin: 0 auto;"/>
+          <div class="subtitle has-text-centered" style="background-color: #d0c0a42e; padding: 10px; width: 70%; margin: 0 auto;">
+            <b>Conclusion :</b>  Models that achieve superior performance on System2 questions often engage in longer CoT reasoning processes.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
+
 <!-- End image carousel -->
 
 
-<!-- Image carousel -->
 <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered"><img src="static/images/开心-2.png" alt="emoji" width="50" height="50"/> Impact of Training Strategies and Reasoning Techniques</h2>
+      <div class="content has-text-centered" style="margin-bottom: 2rem;">
+        <p>This section demonstrates the impact of different training methods and reasoning techniques on the reasoning capabilities of models in the anesthesia domain.</p>
+      </div>
+      <div class="has-text-centered" style="margin-bottom: 4rem;">
+        <table class="table is-hoverable is-fullwidth" style="width: 50%; margin: 0 auto; text-align: center;">
+          <thead>
+            <tr>
+              <th style="text-align: center;" rowspan="2">Model</th>
+              <th style="text-align: center;" colspan="2">SFT Data</th>
+              <th style="text-align: center;" rowspan="2">Accuracy ANESBENCH</th>
+            </tr>
+            <tr>
+              <th style="text-align: center;">AnesQA</th>
+              <th style="text-align: center;">Medical-o1</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="text-align: center;">Qwen2.5-7B-Instruct</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">51.5</td>
+            </tr>
+            <tr>
+              <td style="text-align: center;" rowspan="3">Qwen2.5-7B-Base</td>
+              <td style="text-align: center;">✓</td>
+              <td style="text-align: center;">X</td>
+              <td style="text-align: center;">49.3</td>
+            </tr>
+            <tr>
+              <td style="text-align: center;">X</td>
+              <td style="text-align: center;">✓</td>
+              <td style="text-align: center;">49.1</td>
+            </tr>
+            <tr>
+              <td style="text-align: center;">✓</td>
+              <td style="text-align: center;">✓</td>
+              <td style="text-align: center;">49.7</td>
+            </tr>
+            <tr>
+              <td style="text-align: center;" rowspan="3">Qwen2.5-7B-Base-CPT</td>
+              <td style="text-align: center;">✓</td>
+              <td style="text-align: center;">X</td>
+              <td style="text-align: center;">49.7</td>
+            </tr>
+            <tr>
+              <td style="text-align: center;">X</td>
+              <td style="text-align: center;">✓</td>
+              <td style="text-align: center;">50.7</td>
+            </tr>
+            <tr>
+              <td style="text-align: center;">✓</td>
+              <td style="text-align: center;">✓</td>
+              <td style="text-align: center;">51.2</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="subtitle has-text-centered" style="background-color: #d0c0a42e; padding: 10px; width: 70%; margin: 1rem auto;">
+          测试内容
+        </div>
+      </div>
+
+      <div class="has-text-centered" style="margin-bottom: 4rem;">
+        <table class="table is-hoverable is-fullwidth" style="width: 50%; margin: 0 auto; text-align: center;">
+          <thead>
+            <tr>
+              <th style="text-align: center;">Reasoning Strategy</th>
+              <th style="text-align: center;">Tree Width</th>
+              <th style="text-align: center;">Beam Size</th>
+              <th style="text-align: center;">Step Tokens</th>
+              <th style="text-align: center;">Accuracy(%)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="text-align: center;">None</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">51.2</td>
+            </tr>
+            <tr>
+              <td style="text-align: center;" rowspan="2">Best-of-N [21]</td>
+              <td style="text-align: center;">4</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">51.5</td>
+            </tr>
+            <tr>
+              <td style="text-align: center;">8</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">51.5</td>
+            </tr>
+            <tr>
+              <td style="text-align: center;" rowspan="2">Beam Search [19]</td>
+              <td style="text-align: center;">4</td>
+              <td style="text-align: center;">4</td>
+              <td style="text-align: center;">32</td>
+              <td style="text-align: center;">52.1</td>
+            </tr>
+            <tr>
+              <td style="text-align: center;">8</td>
+              <td style="text-align: center;">8</td>
+              <td style="text-align: center;">32</td>
+              <td style="text-align: center;"><strong>52.4</strong></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="subtitle has-text-centered" style="background-color: #d0c0a42e; padding: 10px; width: 70%; margin: 1rem auto;">
+          测试内容
+        </div>
+      </div>
+
+      <div class="has-text-centered" style="margin-bottom: 4rem;">
+        <img src="static/images/updated_figs/impact_of_r1_distillation.png" alt="知识蒸馏性能评估" style="display: block; width: 70%; margin: 0 auto;"/>
+        <div class="subtitle has-text-centered" style="background-color: #d0c0a42e; padding: 10px; width: 70%; margin: 1rem auto;">
+          测试内容
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small is-light">
+  <div class="container">
+    <h2 class="title is-3 has-text-centered"><img src="static/images/酷-1.png" alt="emoji" width="50" height="50"/> Leaderboard on AnesBench & AMCQA</h2>
+    <div class="content">
+      <p>The following leaderboard presents the performance of over fifty different models on AnesBench and AMCQA. The "Average" refers to the mean score across both AnesBench and AMCQA.</p>
+      <table class="table is-hoverable is-fullwidth" style="width: 100%; margin: 0 auto;">
+        <thead>
+          <tr>
+            <th>LLM</th>
+            <th>AnesBench system1</th>
+            <th>AnesBench system1.x</th>
+            <th>AnesBench system2</th>
+            <th>AnesBench overall</th>
+            <th>AMCQA system1</th>
+            <th>AMCQA system1.x</th>
+            <th>AMCQA system2</th>
+            <th>AMCQA overall</th>
+            <th>Average</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Qwen3-0.6B</td>
+            <td>0.39</td>
+            <td>0.31</td>
+            <td>0.26</td>
+            <td>0.36</td>
+            <td>0.37</td>
+            <td>0.35</td>
+            <td>0.31</td>
+            <td>0.37</td>
+            <td>0.36</td>
+          </tr>
+          <tr>
+            <td>gemma-3-1b-it</td>
+            <td>0.33</td>
+            <td>0.26</td>
+            <td>0.21</td>
+            <td>0.3</td>
+            <td>0.26</td>
+            <td>0.25</td>
+            <td>0.21</td>
+            <td>0.26</td>
+            <td>0.28</td>
+          </tr>
+          <tr>
+            <td>DeepSeek-R1-Distill-Qwen-1.5B</td>
+            <td>0.32</td>
+            <td>0.28</td>
+            <td>0.27</td>
+            <td>0.31</td>
+            <td>0.26</td>
+            <td>0.26</td>
+            <td>0.22</td>
+            <td>0.26</td>
+            <td>0.28</td>
+          </tr>
+          <tr>
+            <td>Qwen3-1.7B</td>
+            <td>0.48</td>
+            <td>0.37</td>
+            <td>0.3</td>
+            <td>0.44</td>
+            <td>0.54</td>
+            <td>0.5</td>
+            <td>0.44</td>
+            <td>0.53</td>
+            <td>0.48</td>
+          </tr>
+          <tr>
+            <td>Qwen3-4B</td>
+            <td>0.6</td>
+            <td>0.46</td>
+            <td>0.34</td>
+            <td>0.54</td>
+            <td>0.54</td>
+            <td>0.48</td>
+            <td>0.48</td>
+            <td>0.53</td>
+            <td>0.53</td>
+          </tr>
+          <tr>
+            <td>gemma-3-4b-it</td>
+            <td>0.46</td>
+            <td>0.36</td>
+            <td>0.35</td>
+            <td>0.42</td>
+            <td>0.43</td>
+            <td>0.41</td>
+            <td>0.37</td>
+            <td>0.43</td>
+            <td>0.42</td>
+          </tr>
+          <tr>
+            <td>chatglm3-6b</td>
+            <td>0.37</td>
+            <td>0.28</td>
+            <td>0.25</td>
+            <td>0.34</td>
+            <td>0.36</td>
+            <td>0.36</td>
+            <td>0.34</td>
+            <td>0.36</td>
+            <td>0.35</td>
+          </tr>
+          <tr>
+            <td>Qwen2.5-7B-Instruct</td>
+            <td>0.56</td>
+            <td>0.44</td>
+            <td>0.36</td>
+            <td>0.52</td>
+            <td>0.68</td>
+            <td>0.63</td>
+            <td>0.58</td>
+            <td>0.67</td>
+            <td>0.59</td>
+          </tr>
+          <tr>
+            <td>HuatuoGPT-o1-7B</td>
+            <td>0.56</td>
+            <td>0.45</td>
+            <td>0.38</td>
+            <td>0.52</td>
+            <td>0.71</td>
+            <td>0.65</td>
+            <td>0.63</td>
+            <td>0.7</td>
+            <td>0.61</td>
+          </tr>
+          <tr>
+            <td>Baichuan2-7B-Chat</td>
+            <td>0.39</td>
+            <td>0.31</td>
+            <td>0.3</td>
+            <td>0.37</td>
+            <td>0.44</td>
+            <td>0.41</td>
+            <td>0.41</td>
+            <td>0.43</td>
+            <td>0.4</td>
+          </tr>
+          <tr>
+            <td>BioMistral-7B</td>
+            <td>0.43</td>
+            <td>0.3</td>
+            <td>0.32</td>
+            <td>0.39</td>
+            <td>0.26</td>
+            <td>0.25</td>
+            <td>0.28</td>
+            <td>0.26</td>
+            <td>0.32</td>
+          </tr>
+          <tr>
+            <td>DeepSeek-R1-Distill-Qwen-7B</td>
+            <td>0.4</td>
+            <td>0.34</td>
+            <td>0.28</td>
+            <td>0.38</td>
+            <td>0.33</td>
+            <td>0.32</td>
+            <td>0.34</td>
+            <td>0.33</td>
+            <td>0.35</td>
+          </tr>
+          <tr>
+            <td>Qwen3-8B</td>
+            <td>0.65</td>
+            <td>0.5</td>
+            <td>0.4</td>
+            <td>0.6</td>
+            <td>0.68</td>
+            <td>0.53</td>
+            <td>0.5</td>
+            <td>0.65</td>
+            <td>0.62</td>
+          </tr>
+          <tr>
+            <td>Meta-Llama-3-8B-Instruct</td>
+            <td>0.54</td>
+            <td>0.42</td>
+            <td>0.39</td>
+            <td>0.5</td>
+            <td>0.49</td>
+            <td>0.47</td>
+            <td>0.47</td>
+            <td>0.49</td>
+            <td>0.49</td>
+          </tr>
+          <tr>
+            <td>Llama-3.1-8B-Instruct</td>
+            <td>0.58</td>
+            <td>0.45</td>
+            <td>0.36</td>
+            <td>0.53</td>
+            <td>0.53</td>
+            <td>0.53</td>
+            <td>0.55</td>
+            <td>0.53</td>
+            <td>0.53</td>
+          </tr>
+          <tr>
+            <td>Llama-3.1-8B-UltraMedical</td>
+            <td>0.63</td>
+            <td>0.47</td>
+            <td>0.41</td>
+            <td>0.57</td>
+            <td>0.54</td>
+            <td>0.52</td>
+            <td>0.5</td>
+            <td>0.54</td>
+            <td>0.56</td>
+          </tr>
+          <tr>
+            <td>HuatuoGPT-o1-8B</td>
+            <td>0.58</td>
+            <td>0.46</td>
+            <td>0.39</td>
+            <td>0.53</td>
+            <td>0.57</td>
+            <td>0.53</td>
+            <td>0.57</td>
+            <td>0.56</td>
+            <td>0.55</td>
+          </tr>
+          <tr>
+            <td>Llama3-OpenBioLLM-8B</td>
+            <td>0.44</td>
+            <td>0.35</td>
+            <td>0.3</td>
+            <td>0.41</td>
+            <td>0.26</td>
+            <td>0.25</td>
+            <td>0.19</td>
+            <td>0.25</td>
+            <td>0.33</td>
+          </tr>
+          <tr>
+            <td>FineMedLM</td>
+            <td>0.4</td>
+            <td>0.35</td>
+            <td>0.27</td>
+            <td>0.38</td>
+            <td>0.3</td>
+            <td>0.34</td>
+            <td>0.38</td>
+            <td>0.31</td>
+            <td>0.34</td>
+          </tr>
+          <tr>
+            <td>FineMedLM-o1</td>
+            <td>0.43</td>
+            <td>0.34</td>
+            <td>0.26</td>
+            <td>0.39</td>
+            <td>0.34</td>
+            <td>0.38</td>
+            <td>0.4</td>
+            <td>0.35</td>
+            <td>0.37</td>
+          </tr>
+          <tr>
+            <td>Bio-Medical-Llama-3-8B</td>
+            <td>0.53</td>
+            <td>0.41</td>
+            <td>0.38</td>
+            <td>0.49</td>
+            <td>0.48</td>
+            <td>0.47</td>
+            <td>0.49</td>
+            <td>0.48</td>
+            <td>0.48</td>
+          </tr>
+          <tr>
+            <td>internlm3-8b-instruct</td>
+            <td>0.6</td>
+            <td>0.43</td>
+            <td>0.4</td>
+            <td>0.54</td>
+            <td><u>0.85</u></td>
+            <td>0.76</td>
+            <td>0.77</td>
+            <td><u>0.84</u></td>
+            <td>0.69</td>
+          </tr>
+          <tr>
+            <td>glm-4-9b-chat</td>
+            <td>0.48</td>
+            <td>0.36</td>
+            <td>0.36</td>
+            <td>0.44</td>
+            <td>0.61</td>
+            <td>0.6</td>
+            <td>0.56</td>
+            <td>0.61</td>
+            <td>0.53</td>
+          </tr>
+          <tr>
+            <td>gemma-2-9b-it</td>
+            <td>0.53</td>
+            <td>0.4</td>
+            <td>0.36</td>
+            <td>0.49</td>
+            <td>0.54</td>
+            <td>0.49</td>
+            <td>0.41</td>
+            <td>0.52</td>
+            <td>0.51</td>
+          </tr>
+          <tr>
+            <td>gemma-3-12b-it</td>
+            <td>0.56</td>
+            <td>0.46</td>
+            <td>0.36</td>
+            <td>0.52</td>
+            <td>0.59</td>
+            <td>0.55</td>
+            <td>0.51</td>
+            <td>0.58</td>
+            <td>0.55</td>
+          </tr>
+          <tr>
+            <td>Baichuan2-13B-Chat</td>
+            <td>0.42</td>
+            <td>0.31</td>
+            <td>0.34</td>
+            <td>0.39</td>
+            <td>0.48</td>
+            <td>0.47</td>
+            <td>0.46</td>
+            <td>0.48</td>
+            <td>0.43</td>
+          </tr>
+          <tr>
+            <td>phi-4</td>
+            <td>0.69</td>
+            <td>0.57</td>
+            <td>0.41</td>
+            <td>0.64</td>
+            <td>0.57</td>
+            <td>0.57</td>
+            <td>0.56</td>
+            <td>0.57</td>
+            <td>0.6</td>
+          </tr>
+          <tr>
+            <td>DeepSeek-R1-Distill-Qwen-14B</td>
+            <td>0.64</td>
+            <td>0.51</td>
+            <td>0.4</td>
+            <td>0.59</td>
+            <td>0.62</td>
+            <td>0.66</td>
+            <td>0.61</td>
+            <td>0.63</td>
+            <td>0.61</td>
+          </tr>
+          <tr>
+            <td>Qwen2.5-14B-Instruct</td>
+            <td>0.61</td>
+            <td>0.52</td>
+            <td>0.41</td>
+            <td>0.57</td>
+            <td>0.74</td>
+            <td>0.7</td>
+            <td>0.62</td>
+            <td>0.73</td>
+            <td>0.65</td>
+          </tr>
+          <tr>
+            <td>Qwen3-14B</td>
+            <td>0.7</td>
+            <td>0.57</td>
+            <td>0.45</td>
+            <td>0.65</td>
+            <td>0.77</td>
+            <td>0.72</td>
+            <td>0.68</td>
+            <td>0.76</td>
+            <td>0.7</td>
+          </tr>
+          <tr>
+            <td>gemma-3-27b-it</td>
+            <td>0.63</td>
+            <td>0.52</td>
+            <td>0.4</td>
+            <td>0.58</td>
+            <td>0.65</td>
+            <td>0.62</td>
+            <td>0.62</td>
+            <td>0.65</td>
+            <td>0.61</td>
+          </tr>
+          <tr>
+            <td>gemma-2-27b-it</td>
+            <td>0.6</td>
+            <td>0.43</td>
+            <td>0.36</td>
+            <td>0.54</td>
+            <td>0.57</td>
+            <td>0.52</td>
+            <td>0.48</td>
+            <td>0.56</td>
+            <td>0.55</td>
+          </tr>
+          <tr>
+            <td>Qwen3-30B-A3B</td>
+            <td>0.73</td>
+            <td>0.6</td>
+            <td>0.48</td>
+            <td>0.68</td>
+            <td>0.73</td>
+            <td>0.71</td>
+            <td>0.7</td>
+            <td>0.73</td>
+            <td>0.7</td>
+          </tr>
+          <tr>
+            <td>Qwen3-32B</td>
+            <td>0.72</td>
+            <td>0.64</td>
+            <td>0.48</td>
+            <td>0.68</td>
+            <td>0.8</td>
+            <td>0.77</td>
+            <td>0.73</td>
+            <td>0.8</td>
+            <td>0.74</td>
+          </tr>
+          <tr>
+            <td>DeepSeek-R1-Distill-Qwen-32B</td>
+            <td>0.67</td>
+            <td>0.56</td>
+            <td>0.45</td>
+            <td>0.63</td>
+            <td>0.66</td>
+            <td>0.71</td>
+            <td>0.65</td>
+            <td>0.67</td>
+            <td>0.65</td>
+          </tr>
+          <tr>
+            <td>Qwen2.5-32B-Instruct</td>
+            <td>0.65</td>
+            <td>0.55</td>
+            <td>0.44</td>
+            <td>0.61</td>
+            <td>0.77</td>
+            <td>0.73</td>
+            <td>0.69</td>
+            <td>0.76</td>
+            <td>0.68</td>
+          </tr>
+          <tr>
+            <td>QwQ-32B-Preview</td>
+            <td>0.69</td>
+            <td>0.58</td>
+            <td>0.44</td>
+            <td>0.64</td>
+            <td>0.74</td>
+            <td>0.7</td>
+            <td>0.68</td>
+            <td>0.73</td>
+            <td>0.68</td>
+          </tr>
+          <tr>
+            <td>Yi-1.5-34B-Chat</td>
+            <td>0.54</td>
+            <td>0.44</td>
+            <td>0.35</td>
+            <td>0.5</td>
+            <td>0.65</td>
+            <td>0.64</td>
+            <td>0.64</td>
+            <td>0.65</td>
+            <td>0.57</td>
+          </tr>
+          <tr>
+            <td>Llama-3.3-70B-Instruct</td>
+            <td>0.74</td>
+            <td>0.63</td>
+            <td>0.51</td>
+            <td>0.7</td>
+            <td>0.69</td>
+            <td>0.66</td>
+            <td>0.63</td>
+            <td>0.68</td>
+            <td>0.69</td>
+          </tr>
+          <tr>
+            <td>Llama-3-70B-UltraMedical</td>
+            <td>0.73</td>
+            <td>0.6</td>
+            <td>0.47</td>
+            <td>0.68</td>
+            <td>0.72</td>
+            <td>0.68</td>
+            <td>0.62</td>
+            <td>0.71</td>
+            <td>0.69</td>
+          </tr>
+          <tr>
+            <td>Llama3-OpenBioLLM-70B</td>
+            <td>0.68</td>
+            <td>0.55</td>
+            <td>0.44</td>
+            <td>0.63</td>
+            <td>0.65</td>
+            <td>0.6</td>
+            <td>0.6</td>
+            <td>0.64</td>
+            <td>0.64</td>
+          </tr>
+          <tr>
+            <td>Citrus1.0-llama-70B</td>
+            <td>0.71</td>
+            <td>0.6</td>
+            <td>0.52</td>
+            <td>0.67</td>
+            <td>0.71</td>
+            <td>0.69</td>
+            <td>0.67</td>
+            <td>0.71</td>
+            <td>0.69</td>
+          </tr>
+          <tr>
+            <td>HuatuoGPT-o1-70B</td>
+            <td>0.7</td>
+            <td>0.58</td>
+            <td>0.48</td>
+            <td>0.65</td>
+            <td>0.7</td>
+            <td>0.7</td>
+            <td>0.64</td>
+            <td>0.7</td>
+            <td>0.68</td>
+          </tr>
+          <tr>
+            <td>DeepSeek-R1-Distill-Llama-70B</td>
+            <td>0.77</td>
+            <td>0.68</td>
+            <td>0.56</td>
+            <td>0.73</td>
+            <td>0.64</td>
+            <td>0.64</td>
+            <td>0.59</td>
+            <td>0.64</td>
+            <td>0.68</td>
+          </tr>
+          <tr>
+            <td>HuatuoGPT-o1-72B</td>
+            <td>0.71</td>
+            <td>0.61</td>
+            <td>0.48</td>
+            <td>0.67</td>
+            <td>0.82</td>
+            <td><u>0.78</u></td>
+            <td><u>0.78</u></td>
+            <td>0.81</td>
+            <td>0.74</td>
+          </tr>
+          <tr>
+            <td>Qwen2.5-72B-Instruct</td>
+            <td>0.72</td>
+            <td>0.6</td>
+            <td>0.48</td>
+            <td>0.67</td>
+            <td>0.82</td>
+            <td>0.77</td>
+            <td>0.76</td>
+            <td>0.81</td>
+            <td>0.74</td>
+          </tr>
+          <tr>
+            <td>Qwen3-235B-A22B</td>
+            <td>0.78</td>
+            <td>0.67</td>
+            <td>0.57</td>
+            <td>0.74</td>
+            <td>0.76</td>
+            <td>0.73</td>
+            <td>0.69</td>
+            <td>0.75</td>
+            <td>0.74</td>
+          </tr>
+          <tr>
+            <td>Llama-4-Scout-17B-16E-Instruct</td>
+            <td>0.77</td>
+            <td>0.66</td>
+            <td>0.55</td>
+            <td>0.72</td>
+            <td>0.8</td>
+            <td>0.73</td>
+            <td>0.68</td>
+            <td>0.78</td>
+            <td>0.75</td>
+          </tr>
+          <tr>
+            <td>deepseek-v3</td>
+            <td>0.77</td>
+            <td>0.69</td>
+            <td>0.55</td>
+            <td>0.73</td>
+            <td>0.79</td>
+            <td>0.77</td>
+            <td>0.7</td>
+            <td>0.78</td>
+            <td>0.76</td>
+          </tr>
+          <tr>
+            <td>deepseek-r1</td>
+            <td><strong>0.85</strong></td>
+            <td><strong>0.78</strong></td>
+            <td><strong>0.7</strong></td>
+            <td><strong>0.82</strong></td>
+            <td><strong>0.88</strong></td>
+            <td><strong>0.85</strong></td>
+            <td><strong>0.81</strong></td>
+            <td><strong>0.87</strong></td>
+            <td><strong>0.85</strong></td>
+          </tr>
+          <tr>
+            <td>gpt-4o</td>
+            <td><u>0.81</u></td>
+            <td><u>0.72</u></td>
+            <td><u>0.59</u></td>
+            <td><u>0.77</u></td>
+            <td>0.78</td>
+            <td>0.77</td>
+            <td>0.68</td>
+            <td>0.78</td>
+            <td><u>0.77</u></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<!-- Image carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered"><img src="static/images/开心-2.png" alt="emoji" width="50" height="50"/> 训练与推理策略的影响</h2>
+      <div class="content has-text-centered" style="margin-bottom: 2rem;">
+        <p>本节展示了不同训练方法和推理策略对模型在麻醉学领域推理能力的影响。</p>
+      </div>
+      <div id="training-reasoning-carousel" class="carousel results-carousel">
+        <div class="item has-text-centered">
+          <img src="static/images/table2.png" alt="训练策略的有效性" style="display: block; width: 70%; margin: 0 auto;"/>
+          <div class="subtitle has-text-centered" style="background-color: #d0c0a42e; padding: 10px; width: 70%; margin: 0 auto;">
+            训练策略的有效性比较
+          </div>
+        </div>
+        <div class="item has-text-centered">
+          <img src="static/images/table3.png" alt="推理技术的影响" style="display: block; width: 70%; margin: 0 auto;"/>
+          <div class="subtitle has-text-centered" style="background-color: #d0c0a42e; padding: 10px; width: 70%; margin: 0 auto;">
+            不同推理技术的性能对比
+          </div>
+        </div>
+        <div class="item has-text-centered">
+          <img src="static/images/fig4.png" alt="知识蒸馏性能评估" style="display: block; width: 70%; margin: 0 auto;"/>
+          <div class="subtitle has-text-centered" style="background-color: #d0c0a42e; padding: 10px; width: 70%; margin: 0 auto;">
+            知识蒸馏性能的综合评估
+          </div>
+        </div>
+        <div class="item has-text-centered">
+          
+          <div style="height: 1000px; overflow-y: auto;">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>训练策略</th>
+                  <th>推理策略</th>
+                  <th>准确率</th>
+                  <th>召回率</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>基线模型</td>
+                  <td>75.3%</td>
+                  <td>73.8%</td>
+                  <td>74.5%</td>
+                </tr>
+                <tr>
+                  <td>专家知识增强</td>
+                  <td>82.1%</td>
+                  <td>80.9%</td>
+                  <td>81.5%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+            
+          <div class="subtitle has-text-centered" style="background-color: #d0c0a42e; padding: 10px; width: 70%; margin: 0 auto;">
+            不同训练与推理策略组合的效果分析
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- Image carousel -->
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3 has-text-centered"><img src="static/images/开心-2.png" alt="emoji" width="50" height="50"/> Impact of Training & Reasoning Strategy</h2>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/table2.png" alt="Effectiveness of Training Strategies"/>
+        <table class="table is-bordered is-striped is-narrow is-hoverable" style="margin: 0 auto; width: 70%;">
+          <thead>
+            <tr>
+              <th>训练策略</th>
+              <th>准确率</th>
+              <th>召回率</th>
+              <th>F1分数</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>基线模型</td>
+              <td>75.3%</td>
+              <td>73.8%</td>
+              <td>74.5%</td>
+            </tr>
+            <tr>
+              <td>专家知识增强</td>
+              <td>82.1%</td>
+              <td>80.9%</td>
+              <td>81.5%</td>
+            </tr>
+            <tr>
+              <td>多任务学习</td>
+              <td>84.7%</td>
+              <td>83.2%</td>
+              <td>83.9%</td>
+            </tr>
+            <tr>
+              <td>知识蒸馏</td>
+              <td>86.5%</td>
+              <td>85.8%</td>
+              <td>86.1%</td>
+            </tr>
+          </tbody>
+        </table>
         <h2 class="subtitle has-text-centered">
           Effectiveness of Training Strategies
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/table3.png" alt="Impact of Reasoning Techniques"/>
         <h2 class="subtitle has-text-centered">
           Impact of Reasoning Techniques
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/fig4.png" alt="Evaluation of Distillation Performance"/>
         <h2 class="subtitle has-text-centered">
           Evaluation of Distillation Performance
@@ -245,11 +1150,11 @@
   </div>
 </div>
 </div>
-</section>
+</section> -->
 <!-- End image carousel -->
 
 
-<!--BibTex citation -->
+<!-- BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
@@ -282,11 +1187,6 @@
   </div>
 </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
 
   </body>
   </html>
