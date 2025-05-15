@@ -19,3 +19,5 @@ gem "jekyll-gist", "~> 1.5", :group => :jekyll_plugins
 gem "jekyll-feed", "~> 0.17.0", :group => :jekyll_plugins
 
 gem "jekyll-remote-theme", "~> 0.4.3", :group => :jekyll_plugins
+
+gem "minimal-mistakes-jekyll", "~> 4.27", :group => :jekyll_plugins
