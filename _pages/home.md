@@ -3,7 +3,7 @@ title: "AnesBench"
 layout: splash
 permalink: /
 header:
-    overlay_color: "#000"
+    overlay_color: "rgba(7, 165, 7, 0.3)"
     overlay_filter: "0.1"
     # overlay_image: {{ site.baseurl }}/assets/overview.png
 excerpt: "Multi-Dimensional Evaluation of LLM Reasoning in Anesthesiology"
