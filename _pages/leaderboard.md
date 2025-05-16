@@ -39,6 +39,8 @@ The following leaderboard presents the performance of over fifty different model
   });
 </script>
 
+
+
 <!-- This will add arrows, as well as support for .no-sort and .indicator-left -->
 <link href="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@latest/sortable-base.min.css" rel="stylesheet" />
 
@@ -46,6 +48,26 @@ The following leaderboard presents the performance of over fifty different model
 <link href="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@latest/sortable.min.css" rel="stylesheet" />
 
 <style>
+      .sortable {
+      --th-bg: rgba(30, 120, 60, 0.85);
+      --th-color: #ffffff;
+      --stripe-color: #f1fdf1;
+      --td-color: #222222;
+      --td-on-stripe-color: #1a1a1a;
+      border-spacing: 0;
+      }
+      .sortable thead th {
+      background: var(--th-bg);
+      color: var(--th-color);
+      }
+      .sortable tbody tr:nth-child(odd) {
+      background-color: var(--stripe-color);
+      color: var(--td-on-stripe-color);
+      }
+      .sortable td, .sortable th {
+      padding: 10px;
+      }
+
     .sortable thead th {
         text-align: center;
         vertical-align: middle;
