@@ -8,21 +8,21 @@ permalink: /findings
     # overlay_image: {{ site.baseurl }}/assets/overview.png
 # excerpt: "Multi-Dimensional Evaluation of LLM Reasoning in Anesthesiology"
 model_scale:
-  - image_path: "{{ site.baseurl }}/assets/updated1_models_en.png"
+  - image_path: /assets/updated1_models_en.png
     alt: "Model Scale Analysis"
     title: "<div style=\"margin: auto;\">Model Scale Analysis on AnesBench</div>"
     excerpt: "<div style=\"max-width: 900px;width: 100%;margin: auto auto 20px auto;padding: 10px 20px;background: linear-gradient(135deg, #f0fff0, #e6ffe6);border: 3px solid #90ee90;border-radius: 12px;box-shadow: 0 4px 20px rgba(0, 128, 0, 0.1);min-height: 300px;display: flex;flex-direction: column;justify-content: center;font-family: 'Segoe UI', sans-serif;line-height: 1.6;color: #333;\"><div style=\"font-size: 1.4em; font-weight: bold; margin-bottom: 10px; color: #2e8b57;\">📌 Conclusion 1.1:</div><div style=\"font-size: 1.1em; margin-bottom: 20px;\">Model performance is strongly positively correlated with model scale, yet this relationship exhibits diminishing marginal returns.</div><div style=\"font-size: 1.4em; font-weight: bold; margin-bottom: 10px; color: #2e8b57;\">📌 Conclusion 1.2:</div><div style=\"font-size: 1.1em;\">Compared to System 1, the performance gains achieved by increasing model scale on System 2 are significantly lower.</div></div>"
-  - image_path: "{{ site.baseurl }}/assets/updated1_models_cn.png"
+  - image_path: /assets/updated1_models_cn.png
     alt: "Model Scale Analysis"
     title: "<div style=\"margin: auto;\">Model Scale Analysis on AMCQA</div>"
     excerpt: "<div style=\"max-width: 900px;width: 100%;margin: auto auto 20px auto;padding: 10px 20px;background: linear-gradient(135deg, #f0fff0, #e6ffe6);border: 3px solid #90ee90;border-radius: 12px;box-shadow: 0 4px 20px rgba(0, 128, 0, 0.1);min-height: 300px;display: flex;flex-direction: column;justify-content: center;font-family: 'Segoe UI', sans-serif;line-height: 1.6;color: #333;\"><div style=\"font-size: 1.4em; font-weight: bold; margin-bottom: 10px; color: #2e8b57;\">📌 Conclusion 1.3:</div><div style=\"font-size: 1.1em; margin-bottom: 20px;\">Consistent with findings on AnesBench, Chinese AMCQA also demonstrates a positive correlation between model performance and scale, exhibiting diminishing returns. However, the distinction between system1,system1.x and system2 is not pronounced, potentially due to dataset's limited differentiation in difficulty levels.</div></div>"
 language:
-  - image_path: "{{ site.baseurl }}/assets/translation_lollipop.png"
+  - image_path: /assets/translation_lollipop.png
     alt: "Language Transferability Analysis"
     title: "<div style=\"margin: auto;\">Language Transferability Analysis</div>"
     excerpt: "<div style=\"text-align: left;max-width: 900px;width: 100%;margin: auto auto 20px auto;padding: 10px 20px;background: linear-gradient(135deg, #f0fff0, #e6ffe6);border: 3px solid #90ee90;border-radius: 12px;box-shadow: 0 4px 20px rgba(0, 128, 0, 0.1);min-height: 300px;display: flex;flex-direction: column;justify-content: center;font-family: 'Segoe UI', sans-serif;line-height: 1.6;color: #333;\"><div style=\"font-size: 1.4em; font-weight: bold; margin-bottom: 10px; color: #2e8b57;\">📌 Conclusion 1.4:</div><div style=\"font-size: 1.1em; margin-bottom: 20px;\">Language transfer ability remains critical for multilingual model performance in anesthesia reasoning. We recommend continued pre-training to address the deficiency in domain-specific knowledge across languages at the stable language ability stage.</div></div>"
 distillation:
-  - image_path: "{{ site.baseurl }}/assets/impact_of_r1_distillation.png"
+  - image_path: /assets/impact_of_r1_distillation.png
     alt: "Distillation Analysis"
     title: "<div style=\"margin: auto;\">Distillation Analysis</div>"
     excerpt: "<div style=\"text-align: left;max-width: 900px;width: 100%;margin: auto auto 20px auto;padding: 10px 20px;background: linear-gradient(135deg, #f0fff0, #e6ffe6);border: 3px solid #90ee90;border-radius: 12px;box-shadow: 0 4px 20px rgba(0, 128, 0, 0.1);min-height: 300px;display: flex;flex-direction: column;justify-content: center;font-family: 'Segoe UI', sans-serif;line-height: 1.6;color: #333;\"><div style=\"font-size: 1.4em; font-weight: bold; margin-bottom: 10px; color: #2e8b57;\">📌 Conclusion 2.3:</div><div style=\"font-size: 1.1em; margin-bottom: 20px;\">Reasoning skills distilled from diverse tasks transfer well to niche domains, suggesting reasoning is more generalizable than domain knowledge.</div><div style=\"font-size: 1.4em; font-weight: bold; margin-bottom: 10px; color: #2e8b57;\">📌 Conclusion 2.4:</div><div style=\"font-size: 1.1em; margin-bottom: 20px;\">Larger models better absorb complex reasoning, highlighting the key role of model capacity in learning structured thinking.</div></div>"
