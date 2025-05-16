@@ -4,7 +4,6 @@ title: Leaderboard
 permalink: /leaderboard/
 classes:
     - landing
-    - dark-theme
 ---
 
 # **LeaderBoard - AnesBench**

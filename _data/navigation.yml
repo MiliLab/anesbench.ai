@@ -4,3 +4,9 @@ main:
 
   - title: "LeaderBoard"
     url: /leaderboard/
+
+  - title: "Findings"
+    url: /findings
+  
+  # - title: "Download"
+  #   url: /download
