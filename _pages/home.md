@@ -34,6 +34,10 @@ It contains 4,427 anesthesiology questions in English.
 Each question is labeled with a three-level categorization of cognitive demands and includes Chinese-English translations, 
 enabling evaluation of LLMs’ knowledge, application, and clinical reasoning abilities across diverse linguistic contexts.
 
+> For dataset access, please refer to our Hugging Face repository: [AnesBench](https://huggingface.co/datasets/MiliLab/AnesBench), [AnesQA](https://huggingface.co/datasets/MiliLab/AnesQA) and [AnesCorpus](https://huggingface.co/datasets/MiliLab/AnesCorpus).
+
+> For the overview of the dataset, including usage examples and code, please refer to the [AnesBench GitHub repository](https://github.com/MiliLab/AnesBench).
+
 # 🔍 Overview
 <figure>
 <div align="center">
